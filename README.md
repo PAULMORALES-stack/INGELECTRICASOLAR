@@ -37,7 +37,7 @@ Datos que conviene agregar (no son obligatorios en el sitio): número de matríc
 
 ## Publicar en GitHub Pages
 
-Settings → Pages → Deploy from a branch → `main` / `(root)`. La dirección queda en `https://paulmorales-stack.github.io/INGELECTRICASOLAR/`.
+El sitio está publicado en `https://paulmorales-stack.github.io/INGELECTRICASOLAR/` desde la rama `gh-pages`, que es una copia de `main`. Cada cambio debe subirse a las dos ramas. Para publicar solo desde `main`: Settings → Pages → Branch: `main` / `(root)` → Save, y después se puede borrar `gh-pages`.
 
 Dominio propio: Settings → Pages → Custom domain. En el DNS del registrador, cuatro registros A (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) y un CNAME `www` → `paulmorales-stack.github.io`. Después, activar **Enforce HTTPS**.
 
