@@ -132,6 +132,9 @@ p{margin:0}
 @media (max-width:640px){.eng{grid-template-columns:1fr}.retrato{width:170px}}
 
 /* coverage */
+.zonas{display:grid;gap:26px}
+.zona{display:grid;gap:12px}
+.zona h3{font-size:1rem;color:var(--ink-2)}
 .towns{display:flex;flex-wrap:wrap;gap:10px}
 .towns span{padding:10px 16px;border-radius:999px;background:var(--surface);border:1px solid var(--line);font-weight:600;font-size:.9375rem;color:var(--head)}
 .towns span.hq{background:var(--sun);color:#0D2B5E;border-color:var(--sun)}
