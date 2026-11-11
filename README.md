@@ -43,16 +43,21 @@ Dominio propio: Settings → Pages → Custom domain. En el DNS del registrador,
 
 Límite conocido: GitHub Pages no permite cabeceras HTTP propias. La CSP va en una etiqueta `<meta>`, así que no hay protección contra incrustar el sitio en marcos de terceros (`frame-ancestors`) ni HSTS propio. Si hiciera falta, poner el dominio detrás de Cloudflare y definir allí las cabeceras.
 
-## Agregar una foto de obra
+## Poner la foto de un servicio
 
-Guarde la foto en `img/` (menos de 300 KB, sin datos de ubicación) y copie en `index.html` un bloque como este, con una descripción real en `alt`:
+Cada tarjeta de servicio en `index.html` empieza con un bloque `media`. Las que aún no tienen foto muestran un ícono:
 
 ```html
-<figure class="foto">
-  <img src="img/nombre-de-la-foto.jpg" width="700" height="600" loading="lazy" alt="Qué se ve en la foto">
-  <figcaption>Qué es y dónde, si el cliente lo autoriza.</figcaption>
-</figure>
+<div class="media ic g" aria-hidden="true"><svg ...></svg></div>
 ```
+
+Para ponerle foto, guarde la imagen en `img/` (horizontal, 760 × 428 px, menos de 150 KB, sin datos de ubicación) y reemplace ese bloque por:
+
+```html
+<div class="media"><img src="img/servicio-piscinas.jpg" width="760" height="428" loading="lazy" alt="Qué se ve en la foto"></div>
+```
+
+Use solo fotos de trabajos de la empresa y con permiso del dueño del inmueble.
 
 ## Probar la validación del formulario
 

@@ -89,8 +89,11 @@ p{margin:0}
 
 /* services */
 .svc{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;gap:12px;min-width:0}
-.card .ic{width:44px;height:44px;border-radius:10px;display:grid;place-items:center;color:#fff}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);display:flex;flex-direction:column;min-width:0;overflow:hidden}
+.card .media{aspect-ratio:16/9;display:grid;place-items:center;color:#fff}
+.card .media img{display:block;width:100%;height:100%;object-fit:cover}
+.card .media svg{width:64px;height:64px;stroke-width:1.5}
+.card .cuerpo{padding:22px 26px 24px;display:flex;flex-direction:column;gap:12px;flex:1}
 .card p{color:var(--ink-2);font-size:.9688rem}
 .card .tag{margin-top:auto;padding-top:8px;font:500 .75rem/1.4 var(--f-mono);color:var(--ink-2)}
 .ic.y{background:var(--sun);color:#0D2B5E}.ic.r{background:var(--red)}.ic.g{background:var(--leaf)}.ic.n{background:#0D2B5E}
@@ -229,7 +232,5 @@ footer .base{border-top:1px solid rgba(255,255,255,.12);padding-block:18px;font-
 @media (max-width:480px){.brand img{height:40px}.brand b{font-size:1rem}.brand small{font-size:.625rem;letter-spacing:.1em}}
 @media (max-width:359px){.brand span{display:none}}
 /* foto de obra y logo del pie */
-.foto{margin:0;display:grid;gap:10px}
-.foto img{display:block;width:100%;height:auto;border-radius:16px}
-.foto figcaption{font-size:.875rem;color:var(--ink-2)}
+.split>.sec-head{margin-bottom:0}
 .logo-pie{width:150px;height:auto;margin-bottom:6px}
